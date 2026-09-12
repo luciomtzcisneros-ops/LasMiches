@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tu Nombre Aquí">
+    <meta name="description" content="Receta de michelada chilanga con ajonjolí y tamarindo">
+    <title>Michelada Chilanga con Ajonjolí y Tamarindo | Receta</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header id="encabezado">
+        <h1>Michelada Chilanga con Ajonjolí y Tamarindo</h1>
+        <p class="autor">Receta creada por: <strong>Tu Nombre Aquí</strong></p>
+        <nav>
+            <a href="#ingredientes">Ingredientes</a>
+            <a href="#preparacion">Preparación</a>
+            <a href="#datos">Datos Nutricionales</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- ================= MAIN ================= -->
+    <main>
+
+        <!-- ---------- INTRO ---------- -->
+        <section id="intro" class="tarjeta">
+            <h2>Una michelada bien chilanga 🍺</h2>
+            <p>
+                La <em>michelada chilanga</em> es una bebida típica de la Ciudad de México,
+                preparada con cerveza, limón, salsas y especias. En esta versión le añadimos
+                <strong>ajonjolí tostado</strong> y <strong>tamarindo</strong> para darle un toque
+                dulce, ácido y crujiente que la hace única.
+            </p>
+            <img src="img/michelada.jpg" alt="Michelada chilanga con escarchado de tamarindo y ajonjolí" width="400">
+            <p class="nota">Tiempo de preparación: <strong>10 minutos</strong> | Dificultad: <em>Fácil</em></p>
+        </section>
+
+        <!-- ---------- VIDEO / MAPA EMBEBIDO ---------- -->
+        <section id="video" class="tarjeta">
+            <h2>Video tutorial</h2>
+            <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                    title="Video tutorial michelada"
+                    frameborder="0"
+                    allowfullscreen>
+            </iframe>
+        </section>
+
+        <!-- ---------- INGREDIENTES (cargados desde XML) ---------- -->
+        <section id="ingredientes" class="tarjeta">
+            <h2>Ingredientes</h2>
+            <p>Estos ingredientes se cargan dinámicamente desde <code>receta.xml</code>:</p>
+            <ul id="lista-ingredientes">
+                <!-- JS llenará esta lista -->
+            </ul>
+            <p><a href="receta.xml" target="_blank">📄 Ver XML original</a></p>
+        </section>
+
+        <!-- ---------- PREPARACIÓN ---------- -->
+        <section id="preparacion" class="tarjeta">
+            <h2>Preparación paso a paso</h2>
+            <ol>
+                <li>Escarchar el vaso con la mezcla de <strong>tamarindo en polvo</strong>, sal y chile piquín.</li>
+                <li>Agregar hielo al vaso hasta la mitad.</li>
+                <li>Exprimir el jugo de 2 limones.</li>
+                <li>Añadir las salsas: inglesa, Maggi, Valentina y unas gotas de Worcestershire.</li>
+                <li>Vaciar la cerveza lentamente por la pared del vaso.</li>
+                <li>Espolvorear <strong>ajonjolí tostado</strong> al gusto por encima.</li>
+                <li>Decorar con una ramita de apio o un limón deshidratado.</li>
+                <li>¡Salud! 🍻</li>
+            </ol>
+        </section>
+
+        <!-- ---------- TABLA NUTRICIONAL ---------- -->
+        <section id="datos" class="tarjeta">
+            <h2>Datos nutricionales (aprox.)</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nutriente</th>
+                        <th>Cantidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Calorías</td><td>185 kcal</td></tr>
+                    <tr><td>Carbohidratos</td><td>18 g</td></tr>
+                    <tr><td>Proteínas</td><td>2 g</td></tr>
+                    <tr><td>Grasas</td><td>3 g</td></tr>
+                    <tr><td>Sodio</td><td>420 mg</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- ---------- FORMULARIO DE CONTACTO ---------- -->
+        <section id="contacto" class="tarjeta">
+            <h2>¿Te gustó la receta? Escríbenos</h2>
+            <form action="#" method="post">
+                <label for="nombre">Nombre completo *</label>
+                <input type="text" id="nombre" name="nombre"
+                       required minlength="3" maxlength="50"
+                       placeholder="Tu nombre">
+
+                <label for="email">Correo electrónico *</label>
+                <input type="email" id="email" name="email"
+                       required placeholder="tucorreo@ejemplo.com">
+
+                <label for="tel">Teléfono (10 dígitos) *</label>
+                <input type="tel" id="tel" name="tel"
+                       required pattern="[0-9]{10}"
+                       placeholder="5512345678">
+
+                <label for="mensaje">Mensaje *</label>
+                <textarea id="mensaje" name="mensaje" rows="4"
+                          required minlength="10"
+                          placeholder="Cuéntanos qué tal te quedó..."></textarea>
+
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer id="pie">
+        <p>© 2025 Tu Nombre Aquí | Proyecto Unidad 2 — Desarrollo Web</p>
+        <p>
+            Sígueme en:
+            <a href="https://facebook.com" target="_blank">Facebook</a> |
+            <a href="https://instagram.com" target="_blank">Instagram</a> |
+            <a href="https://github.com" target="_blank">GitHub</a>
+        </p>
+        <p><a href="#encabezado">⬆ Volver arriba</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

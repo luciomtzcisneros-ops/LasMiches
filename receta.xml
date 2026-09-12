@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<receta>
+    <titulo>Michelada Chilanga con Ajonjolí y Tamarindo</titulo>
+    <porciones>1 vaso</porciones>
+    <tiempo>10 minutos</tiempo>
+    <ingredientes>
+        <ingrediente unidad="ml">350 cerveza clara bien fría</ingrediente>
+        <ingrediente unidad="pieza">2 limones</ingrediente>
+        <ingrediente unidad="cda">1 tamarindo en polvo</ingrediente>
+        <ingrediente unidad="cda">1 ajonjolí tostado</ingrediente>
+        <ingrediente unidad="cdita">1 sal</ingrediente>
+        <ingrediente unidad="cdita">1 chile piquín molido</ingrediente>
+        <ingrediente unidad="cdita">1 salsa inglesa</ingrediente>
+        <ingrediente unidad="cdita">1 salsa Maggi</ingrediente>
+        <ingrediente unidad="cda">1 salsa Valentina</ingrediente>
+        <ingrediente unidad="gotas">3 Worcestershire</ingrediente>
+        <ingrediente unidad="taza">1 hielo al gusto</ingrediente>
+    </ingredientes>
+</receta>
