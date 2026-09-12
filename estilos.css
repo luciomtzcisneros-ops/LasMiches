@@ -156,14 +156,26 @@ form button:hover {
     background: #b5651d;
 }
 
-/* ===== Footer ===== */
-#pie {
-    background: #2c1810;
-    color: #ffe4b5;
-    text-align: center;
-    padding: 20px;
-    border-radius: 12px;
-    margin-top: 30px;
+/* ===== Layout principal con Flexbox ===== */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 900px;   /* ancho explícito */
+    margin: 0 auto;     /* centrado */
+}
+
+/* Ancho y alto explícitos en la imagen */
+.tarjeta img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+/* Caja con dimensiones explícitas para demostrar width/height */
+.tarjeta {
+    width: 100%;
+    min-height: 150px;
 }
 
 #pie a {
