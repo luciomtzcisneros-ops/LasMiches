@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Tu Nombre Aquí">
+    <meta name="author" content="Jazmin Peraza 22111807 | Luciano Martinez 22111816">
     <meta name="description" content="Receta de michelada chilanga con ajonjolí y tamarindo">
     <title>Michelada Chilanga con Ajonjolí y Tamarindo | Receta</title>
     <link rel="stylesheet" href="estilos.css">
@@ -13,12 +13,19 @@
     <!-- ================= HEADER ================= -->
     <header id="encabezado">
         <h1>Michelada Chilanga con Ajonjolí y Tamarindo</h1>
-        <p class="autor">Receta creada por: <strong>Jazmin Peraza 22111807 | Luciano Martinez 22111816 </strong></p>
+        <p class="autor">
+            Receta creada por:
+            <strong>Jazmin Peraza 22111807 | Luciano Martinez 22111816</strong>
+        </p>
+
+        <!-- Navegación con lista desordenada de 4 enlaces -->
         <nav>
-            <a href="#ingredientes">Ingredientes</a>
-            <a href="#preparacion">Preparación</a>
-            <a href="#datos">Datos Nutricionales</a>
-            <a href="#contacto">Contacto</a>
+            <ul>
+                <li><a href="#ingredientes">Menú</a></li>
+                <li><a href="#datos">Horario</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="receta.xml" target="_blank">Ver catálogo</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -34,22 +41,23 @@
                 <strong>ajonjolí tostado</strong> y <strong>tamarindo</strong> para darle un toque
                 dulce, ácido y crujiente que la hace única.
             </p>
-            <img src="img/michelada.jpg" alt="Michelada chilanga con escarchado de tamarindo y ajonjolí" width="400">
+            <img src="img/michelada.jpg"
+                 alt="Michelada chilanga con escarchado de tamarindo y ajonjolí al estilo Xochimilco"
+                 width="400">
             <p class="nota">Tiempo de preparación: <strong>10 minutos</strong> | Dificultad: <em>Fácil</em></p>
         </section>
 
-        <!-- ---------- VIDEO / MAPA EMBEBIDO ---------- -->
+        <!-- ---------- VIDEO EMBEBIDO ---------- -->
         <section id="video" class="tarjeta">
             <h2>Video tutorial</h2>
-            <iframe 
-                width="560" 
-                height="315"
-                src="https://www.youtube-nocoockie.com/embed/495kBvocK_c"
-                title="Video tutorial michelada chilanga"
-                frameborder="0"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
+            <!-- iframe sin el parámetro ?si= para evitar el error 153 de YouTube -->
+            <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/495kBvocK_c"
+                    title="Video tutorial michelada chilanga"
+                    frameborder="0"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
             </iframe>
         </section>
 
@@ -102,6 +110,7 @@
         <section id="contacto" class="tarjeta">
             <h2>¿Te gustó la receta? Escríbenos</h2>
             <form action="#" method="post">
+
                 <label for="nombre">Nombre completo *</label>
                 <input type="text" id="nombre" name="nombre"
                        required minlength="3" maxlength="50"
@@ -110,16 +119,12 @@
                 <label for="email">Correo electrónico *</label>
                 <input type="email" id="email" name="email"
                        required placeholder="tucorreo@ejemplo.com">
-                
+
+                <!-- NUEVO CAMPO: ASUNTO -->
                 <label for="asunto">Asunto *</label>
                 <input type="text" id="asunto" name="asunto"
-                    required minlength="3" maxlength="60"
-                    placeholder="Asunto de tu mensaje">
-
-                <label for="tel">Teléfono (10 dígitos) *</label>
-                <input type="tel" id="tel" name="tel"
-                       required pattern="[0-9]{10}"
-                       placeholder="5512345678">
+                       required minlength="3" maxlength="60"
+                       placeholder="Asunto de tu mensaje">
 
                 <label for="mensaje">Mensaje *</label>
                 <textarea id="mensaje" name="mensaje" rows="4"
@@ -133,16 +138,17 @@
     </main>
 
     <!-- ================= FOOTER ================= -->
-<footer id="pie">
-    <p>© 2025 Michelada Chilanga. Proyecto estudiantil.</p>
-    <p>
-        Sígueme en:
-        <a href="https://facebook.com" target="_blank">Facebook</a> |
-        <a href="https://instagram.com" target="_blank">Instagram</a> |
-        <a href="https://github.com" target="_blank">GitHub</a>
-    </p>
-    <p><a href="#encabezado">⬆ Volver arriba</a></p>
-</footer>
+    <footer id="pie">
+        <!-- Texto exacto requerido por la rúbrica -->
+        <p>© 2025 Michelada Chilanga. Proyecto estudiantil.</p>
+        <p>
+            Síguenos en:
+            <a href="https://facebook.com" target="_blank">Facebook</a> |
+            <a href="https://instagram.com" target="_blank">Instagram</a> |
+            <a href="https://github.com" target="_blank">GitHub</a>
+        </p>
+        <p><a href="#encabezado">⬆ Volver arriba</a></p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
