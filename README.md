@@ -22,5 +22,4 @@ Puedes visualizarlo de dos formas:
 
 ## Publicado en
 
-- GitHub Pages: [tu-url-aquí]
-- Hosting alterno: [tu-otra-url-aquí]
+- GitHub Pages: [(https://github.com/luciomtzcisneros-ops/LasMiches)].
